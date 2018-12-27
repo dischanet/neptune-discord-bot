@@ -169,4 +169,4 @@ exports.config = {
 }
 
 // The token for this bot to login with
-exports.token = process.env.DISCORD_BOT_TOKEN
+exports.token = process.env.TOKEN
