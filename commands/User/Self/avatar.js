@@ -4,7 +4,7 @@ const { MessageAttachment } = require('discord.js')
 module.exports = class extends Command {
   constructor (...args) {
     super(...args, {
-      description: '',
+      description: language => language.get('COMMAND_AVATAR_DESCRIPTION'),
       usage: '[user:username]'
     })
   }
