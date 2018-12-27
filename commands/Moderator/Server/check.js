@@ -2,7 +2,6 @@
 const { Command, util } = require('klasa')
 
 module.exports = class extends Command {
-
   constructor (...args) {
     super(...args, {
       permissionLevel: 6,
@@ -22,8 +21,8 @@ module.exports = class extends Command {
       users.push(`${member.user.tag}, Created:${((mtime - member.user.createdTimestamp) / 1000 / 60).toFixed(0)} min(s) ago`)
     }
 
-    return msg.sendMessage(users.length > 0 ?
-      `The following users are less than the Minimum Account Age:${util.codeBlock('', users.join('\n'))}` :
-      'No users less than Minimum Account Age were found in this server.')
+    return msg.sendMessage(users.length > 0
+      ? `The following users are less than the Minimum Account Age:${util.codeBlock('', users.join('\n'))}`
+      : 'No users less than Minimum Account Age were found in this server.')
   }
 }

@@ -1,7 +1,6 @@
 const { Language } = require('klasa')
 
 module.exports = class extends Language {
-
   constructor (...args) {
     super(...args)
     this.language = {

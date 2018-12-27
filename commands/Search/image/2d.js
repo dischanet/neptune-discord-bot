@@ -4,7 +4,7 @@ const fetch = require('node-fetch')
 
 module.exports = class extends Command {
   constructor (...args) {
-    super (...args, {
+    super(...args, {
       requiredPermissions: ['ATTACH_FILES', 'SEND_MESSAGES'],
       usageDelim: ' ',
       usage: '<tag:str>',
