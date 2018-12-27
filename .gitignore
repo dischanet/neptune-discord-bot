@@ -35,6 +35,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+bwd/
 
 # TypeScript v1 declaration files
 typings/
@@ -62,3 +63,6 @@ typings/
 
 .idea
 .vscode
+
+# JetBrains IDE
+.idea
