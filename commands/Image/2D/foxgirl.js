@@ -7,7 +7,7 @@ module.exports = class extends Command {
     super(...args, {
       requiredPermissions: ['ATTACH_FILES', 'SEND_MESSAGES'],
       cooldown: 30,
-      description: ''
+      description: language => language.get('COMMAND_FOXGIRL_DESCRIPTION')
     })
   }
 

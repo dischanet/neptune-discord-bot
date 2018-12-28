@@ -8,7 +8,7 @@ module.exports = class extends Command {
       alias: ['avatargen'],
       requiredPermissions: ['ATTACH_FILES', 'SEND_MESSAGES'],
       cooldown: 30,
-      description: ''
+      description: language => language.get('COMMAND_AVATARGENERATOR_DESCRIPTION')
     })
   }
 

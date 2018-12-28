@@ -6,7 +6,7 @@ module.exports = class extends Command {
   constructor (...args) {
     super(...args, {
       requiredPermissions: ['ATTACH_FILES', 'SEND_MESSAGES'],
-      description: ''
+      description: language => language.get('COMMAND_CAT_DESCRIPTION')
     })
   }
 

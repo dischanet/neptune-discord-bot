@@ -174,7 +174,13 @@ module.exports = class extends Language {
       COMMAND_LANGUAGE_SAME: '既にその言語に設定されています。',
       COMMAND_LANGUAGE_UPDATE: '言語設定を変更しました。',
       COMMAND_AVATAR_DESCRIPTION: 'ユーザーのアバターを表示したりあなたのアバターを表示します。',
-      COMMAND_SERVERINFO_DESCRIPTION: 'サーバーの情報を表示します。'
+      COMMAND_SERVERINFO_DESCRIPTION: 'サーバーの情報を表示します。',
+      COMMAND_AVATARGENERATOR_DESCRIPTION: 'アイコン用の画像を取得します。',
+      COMMAND_DOG_DESCRIPTION: '犬の画像を表示します。',
+      COMMAND_CAT_DESCRIPTION: '猫の画像を表示します。',
+      COMMAND_SMUG_DESCRIPTION: 'アニメgifを表示します。',
+      COMMAND_NEKO_DESCRIPTION: '猫耳女の子の画像またはgifを表示します。',
+      COMMAND_FOXGIRL_DESCRIPTION: '狐耳女の子の画像を表示します。'
     }
   }
 
