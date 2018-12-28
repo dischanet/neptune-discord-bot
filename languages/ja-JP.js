@@ -185,7 +185,8 @@ module.exports = class extends Language {
       COMMAND_KISS_DESCRIPTION: 'キスしてるgifを表示します。',
       COMMAND_HUG_DESCRIPTION: 'ハグしてるgifを表示します。',
       COMMAND_PAT_DESCRIPTION: 'なでなでしてるgifを表示します。',
-      COMMAND_FEED_DESCRIPTION: '食べさせて貰ってるgifを表示します。'
+      COMMAND_FEED_DESCRIPTION: '食べさせて貰ってるgifを表示します。',
+      COMMAND_SLAP_DESCRIPTION: 'ビンタされてる、してるgifを表示します。'
     }
   }
 
