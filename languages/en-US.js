@@ -14,7 +14,8 @@ module.exports = class extends Language {
       COMMAND_CAT_DESCRIPTION: 'Display the image of the cat.',
       COMMAND_SMUG_DESCRIPTION: 'Show Anime gif',
       COMMAND_NEKO_DESCRIPTION: 'Show neko girl gif or image',
-      COMMAND_FOXGIRL_DESCRIPTION: 'Show fox girl image'
+      COMMAND_FOXGIRL_DESCRIPTION: 'Show fox girl image',
+      COMMAND_LIZARD_DESCRIPTION: 'Display the image of the lizard.'
     }
   }
 }
