@@ -12,7 +12,7 @@ module.exports = class extends Command {
   }
 
   async run (message) {
-    const file = await fetch('https://dog.ceo/api/breeds/image/random').then(res => res.json())
-    return message.send(new MessageAttachment(file['message']))
+    const file = await fetch('https://nekos.life/api/v2/img/woof').then(res => res.json())
+    return message.send(new MessageAttachment(file['url']))
   }
 }
