@@ -23,7 +23,8 @@ module.exports = class extends Language {
       COMMAND_SLAP_DESCRIPTION: 'Show slap gif',
       COMMAND_CUDDLE_DESCRIPTION: 'Show cuddle gif',
       COMMAND_POKE_DESCRIPTION: 'Show poke gif',
-      COMMAND_TICKLE_DESCRIPTION: 'Show tickle gif'
+      COMMAND_TICKLE_DESCRIPTION: 'Show tickle gif',
+      COMMAND_NEKO18_DESCRIPTION: 'Show neko gif or image (R18)'
     }
   }
 }

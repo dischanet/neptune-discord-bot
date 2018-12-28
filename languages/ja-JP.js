@@ -189,7 +189,8 @@ module.exports = class extends Language {
       COMMAND_SLAP_DESCRIPTION: 'ビンタされてる、してるgifを表示します。',
       COMMAND_CUDDLE_DESCRIPTION: '抱きしめてるgifを表示します。',
       COMMAND_POKE_DESCRIPTION: '突いてるgifを表示します。',
-      COMMAND_TICKLE_DESCRIPTION: 'くすぐってるgifを表示します。'
+      COMMAND_TICKLE_DESCRIPTION: 'くすぐってるgifを表示します。',
+      COMMAND_NEKO18_DESCRIPTION: '猫耳女の子のR18画像を表示します。'
     }
   }
 
