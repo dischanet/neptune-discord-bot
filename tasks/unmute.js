@@ -2,7 +2,6 @@
 const { Task } = require('klasa')
 
 module.exports = class extends Task {
-
   async run ({ guild, user }) {
     const _guild = this.client.guilds.get(guild)
     if (!_guild) return
