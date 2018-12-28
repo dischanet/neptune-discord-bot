@@ -182,7 +182,8 @@ module.exports = class extends Language {
       COMMAND_NEKO_DESCRIPTION: '猫耳女の子の画像またはgifを表示します。',
       COMMAND_FOXGIRL_DESCRIPTION: '狐耳女の子の画像を表示します。',
       COMMAND_LIZARD_DESCRIPTION: 'トカゲの画像を表示します。',
-      COMMAND_KISS_DESCRIPTION: 'キスgifを表示します。'
+      COMMAND_KISS_DESCRIPTION: 'キスしてるgifを表示します。',
+      COMMAND_HUG_DESCRIPTION: 'ハグしてるgifを表示します。'
     }
   }
 
