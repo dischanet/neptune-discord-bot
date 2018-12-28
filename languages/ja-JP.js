@@ -190,7 +190,25 @@ module.exports = class extends Language {
       COMMAND_CUDDLE_DESCRIPTION: '抱きしめてるgifを表示します。',
       COMMAND_POKE_DESCRIPTION: '突いてるgifを表示します。',
       COMMAND_TICKLE_DESCRIPTION: 'くすぐってるgifを表示します。',
-      COMMAND_NEKO18_DESCRIPTION: '猫耳女の子のR18画像を表示します。'
+      COMMAND_NEKO18_DESCRIPTION: '猫耳女の子のR18画像を表示します。',
+      COMMAND_ANAL18_DESCRIPTION: 'Show anal gif (R18)',
+      COMMAND_AVATARGENERATOR18_DESCRIPTION: 'R18のアバターを生成します。',
+      COMMAND_BLOWJOB18_DESCRIPTION: 'フェラチオの画像を表示します。',
+      COMMAND_BOOBS18_DESCRIPTION: 'おっぱいの画像を表示します。',
+      COMMAND_CLASSIC18_DESCRIPTION: 'クラシックの画像を表示します(R18)',
+      COMMAND_CUM18_DESCRIPTION: 'Show cum gif or image (R18)',
+      COMMAND_FEET18_DESCRIPTION: '足の画像を表示します。',
+      COMMAND_FEMDOM18_DESCRIPTION: 'Show frmdom image (R18)',
+      COMMAND_FOX18_DESCRIPTION: '狐の女の子の画像を表示します。(R18)',
+      COMMAND_FUTANARI18_DESCRIPTION: 'Show futanari image (R18)',
+      COMMAND_HENTAI18_DESCRIPTION: 'Show hentai git or image (R18)',
+      COMMAND_KUNI18_DESCRIPTION: 'Show kuni gif (R18)',
+      COMMAND_PUSSY18_DESCRIPTION: 'Show pussy gif or image (R18)',
+      COMMAND_PWANK18_DESCRIPTION: 'Show pwank gif or image (R18)',
+      COMMAND_SOLO18_DESCRIPTION: 'Show solo gif or image (R18)',
+      COMMAND_SPANK18_DESCRIPTION: 'Show spank gif image (R18)',
+      COMMAND_TRAP18_DESCRIPTION: 'Show trap image (R18)',
+      COMMAND_YURI18_DESCRIPTION: 'Show yuri gif or image (R18)'
     }
   }
 
