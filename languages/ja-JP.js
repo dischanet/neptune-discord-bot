@@ -188,7 +188,8 @@ module.exports = class extends Language {
       COMMAND_FEED_DESCRIPTION: '食べさせて貰ってるgifを表示します。',
       COMMAND_SLAP_DESCRIPTION: 'ビンタされてる、してるgifを表示します。',
       COMMAND_CUDDLE_DESCRIPTION: '抱きしめてるgifを表示します。',
-      COMMAND_POKE_DESCRIPTION: '突いてるgifを表示します。'
+      COMMAND_POKE_DESCRIPTION: '突いてるgifを表示します。',
+      COMMAND_TICKLE_DESCRIPTION: 'くすぐってるgifを表示します。'
     }
   }
 
