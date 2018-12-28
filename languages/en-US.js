@@ -21,7 +21,8 @@ module.exports = class extends Language {
       COMMAND_PAT_DESCRIPTION: 'Show pat gif',
       COMMAND_FEED_DESCRIPTION: 'Show feed gif',
       COMMAND_SLAP_DESCRIPTION: 'Show slap gif',
-      COMMAND_CUDDLE_DESCRIPTION: 'Show cuddle gif'
+      COMMAND_CUDDLE_DESCRIPTION: 'Show cuddle gif',
+      COMMAND_POKE_DESCRIPTION: 'Show poke gif'
     }
   }
 }
