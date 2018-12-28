@@ -17,7 +17,8 @@ module.exports = class extends Language {
       COMMAND_FOXGIRL_DESCRIPTION: 'Show fox girl image',
       COMMAND_LIZARD_DESCRIPTION: 'Display the image of the lizard.',
       COMMAND_KISS_DESCRIPTION: 'Show kiss gif',
-      COMMAND_HUG_DESCRIPTION: 'Show hug gif'
+      COMMAND_HUG_DESCRIPTION: 'Show hug gif',
+      COMMAND_PAT_DESCRIPTION: 'Show pat gif'
     }
   }
 }
