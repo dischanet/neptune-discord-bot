@@ -173,7 +173,8 @@ module.exports = class extends Language {
       COMMAND_LANGUAGE_DESCRIPTION: '言語設定',
       COMMAND_LANGUAGE_SAME: '既にその言語に設定されています。',
       COMMAND_LANGUAGE_UPDATE: '言語設定を変更しました。',
-      COMMAND_AVATAR_DESCRIPTION: 'ユーザーのアバターを表示したりあなたのアバターを表示します。'
+      COMMAND_AVATAR_DESCRIPTION: 'ユーザーのアバターを表示したりあなたのアバターを表示します。',
+      COMMAND_SERVERINFO_DESCRIPTION: 'サーバーの情報を表示します。'
     }
   }
 
