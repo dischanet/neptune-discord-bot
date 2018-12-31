@@ -4,7 +4,6 @@ module.exports = class extends Command {
   constructor (...args) {
     super(...args, {
       runIn: ['text'],
-      requiredPermissions: ['SEND_MESSAGES'],
       aliases: ['lang'],
       cooldown: 5,
       permissionLevel: 6,
