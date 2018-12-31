@@ -17,7 +17,6 @@ module.exports = class extends Command {
     await request('https://update.pmmp.io/api', {
       method: 'GET',
       json: true
-      // eslint-disable-next-line handle-callback-err
     }, (e, r, b) => {
       const Embed = new MessageEmbed()
         .setColor(8311585)
