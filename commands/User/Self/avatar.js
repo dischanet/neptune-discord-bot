@@ -5,11 +5,12 @@ module.exports = class extends Command {
   constructor (...args) {
     super(...args, {
       description: language => language.get('COMMAND_AVATAR_DESCRIPTION'),
-      usage: '[user:username]'
+      usage: '[member:membername]'
     })
   }
 
-  async run (message, [user = message.author]) {
-    return message.send(new MessageAttachment(user.displayAvatarURL() || 'https://media.discordapp.net/attachments/527895872365789185/527895889692327936/1024px-No_image_available.png'))
+  async run (message, [member]) {
+    if (!member) return message.send(new MessageAttachment(message.author.displayAvatarURL()))
+    return message.send(new MessageAttachment(member.user.displayAvatarURL()))
   }
 }
