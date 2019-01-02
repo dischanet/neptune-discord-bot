@@ -197,7 +197,7 @@ module.exports = class extends Language {
       COMMAND_BOOBS18_DESCRIPTION: 'おっぱいの画像を表示します。',
       COMMAND_CLASSIC18_DESCRIPTION: 'クラシックの画像を表示します(R18)',
       COMMAND_CUM18_DESCRIPTION: 'Show cum gif or image (R18)',
-      COMMAND_FEET18_DESCRIPTION: '足の画像を表示します。',
+      COMMAND_FEET18_DESCRIPTION: '足フェチ向けの画像を表示します。',
       COMMAND_FEMDOM18_DESCRIPTION: 'Show frmdom image (R18)',
       COMMAND_FOX18_DESCRIPTION: '狐の女の子の画像を表示します。(R18)',
       COMMAND_FUTANARI18_DESCRIPTION: 'Show futanari image (R18)',
