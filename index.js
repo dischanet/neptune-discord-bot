@@ -1,10 +1,9 @@
 const { Client } = require('klasa')
 const { config, token } = require('./config')
-const { MinAccAge, Mute } = require('./utils/GuildSchema/GuildDefaultSchema')
 
 class NeptuneClient extends Client {
   constructor (options) {
-    super({ ...options, MinAccAge, Mute })
+    super({ ...options })
   }
 }
 
