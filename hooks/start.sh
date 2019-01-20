@@ -1,3 +1,3 @@
 #!/bin/sh
 
-systemctl start neptune-discord-bot
+systemctl restart neptune-discord-bot
