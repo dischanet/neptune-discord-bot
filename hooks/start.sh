@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo /usr/bin/systemctl start neptune-discord-bot
+systemctl start neptune-discord-bot
