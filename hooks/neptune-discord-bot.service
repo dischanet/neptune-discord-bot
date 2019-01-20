@@ -5,7 +5,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=npm run start
+ExecStart=yarn start
 WorkingDirectory=/home/ec2-user/repos/neptune-discord-bot
 EnvironmentFile=/home/ec2-user/repos/neptune-discord-bot/environment
 Restart=on-failure
