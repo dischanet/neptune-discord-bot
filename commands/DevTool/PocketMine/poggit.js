@@ -15,7 +15,7 @@ module.exports = class extends Command {
       const Embed = new MessageEmbed()
         .setTitle(`検索結果: ${query}`)
       b.filter((item, index) => {
-        if (item['name'] === query) {
+        if (item['name'].toLowerCase() === query.toLowerCase()) {
           Embed.addField(`${item['name']} v${item['version']}`, item['html_url'])
         }
       })
