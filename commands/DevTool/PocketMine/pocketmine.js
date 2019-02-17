@@ -6,7 +6,7 @@ module.exports = class extends Command {
   constructor (...args) {
     super(...args, {
       enabled: true,
-      runIn: ['text', 'dm', 'group'],
+      runIn: ['text', 'dm'],
       description: 'PocketMine-MPの最新ビルドや安定ビルドのダウンロードURLを送信します。',
       requiredPermissions: ['EMBED_LINKS'],
       subcommands: true
