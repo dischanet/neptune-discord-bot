@@ -1,28 +1,60 @@
-const { Command } = require('klasa')
+const { Command, KlasaMessage } = require('klasa')
 const { MessageEmbed } = require('discord.js')
 
-module.exports = class extends Command {
+/**
+ * @extends Command
+ */
+module.exports = class GuideInfo extends Command {
   constructor (...args) {
     super(...args, {
+      description: 'ギルド(サーバー)の情報を表示します。',
       runIn: ['text'],
-      requiredPermissions: ['EMBED_LINKS', 'VIEW_CHANNEL', 'SEND_MESSAGES'],
-      description: language => language.get('COMMAND_SERVERINFO_DESCRIPTION')
+      requiredPermissions: ['EMBED_LINKS']
     })
   }
 
+  /**
+   *
+   * @param {KlasaMessage} message
+   */
   async run (message) {
+    const memberCount = [
+      `Total: ${message.guild.memberCount}`,
+      '',
+      `Online: ${message.guild.members.filter(member => member.presence.status === 'online').size}`,
+      `Idle: ${message.guild.members.filter(member => member.presence.status === 'idle').size}`,
+      `Dnd: ${message.guild.members.filter(member => member.presence.status === 'dnd').size}`,
+      `Offline: ${message.guild.members.filter(member => member.presence.status === 'offline').size}`,
+      `Bot: ${message.guild.members.filter(member => member.user.bot === true).size}`
+    ].join('\n')
+
+    const Channels = [
+      `Total: ${message.guild.channels.size}`,
+      '',
+      `Category: ${message.guild.channels.filter(channel => channel.type === 'category').size}`,
+      `Text: ${message.guild.channels.filter(channel => channel.type === 'text').size}`,
+      `Voice: ${message.guild.channels.filter(channel => channel.type === 'voice').size}`
+    ].join('\n')
+
+    const Emojis = [
+      `Total: ${message.guild.emojis.size}`,
+      '',
+      `Emoji: ${message.guild.emojis.filter(emoji => emoji.animated === false).size}`,
+      `Animation: ${message.guild.emojis.filter(emoji => emoji.animated === true).size}`
+    ].join('\n')
+
     return message.sendEmbed(new MessageEmbed()
-      .setThumbnail(message.guild.iconURL())
-      .setAuthor(message.author.tag, message.author.displayAvatarURL())
       .setTitle(message.guild.name)
-      .addField('ID', message.guild.id, true)
-      .addField('Member', message.guild.memberCount, true)
-      .addField('Channels', message.guild.channels.size, true)
-      .addField('Emojis', message.guild.emojis.size, true)
-      .addField('Roles', message.guild.roles.size, true)
-      .addField('Region', message.guild.region, true)
-      .setFooter(message.guild.owner.user.tag, message.guild.owner.user.displayAvatarURL())
-      .setTimestamp(message.guild.createdTimestamp)
+      .setThumbnail(message.guild.iconURL({ size: 512 }))
+      .setTimestamp(message.guild.createdAt)
+      .setFooter('Created At')
+      .addField('Guide ID', message.guild.id, true)
+      .addField('Owner', message.guild.owner.user.tag, true)
+      .addField('Members', memberCount, true)
+      .addField('Channels', Channels, true)
+      .addField('Emojis', Emojis, true)
+      .addField('Region', message.guild.region.toUpperCase(), true)
+      .addField('Roles', `Total: ${message.guild.roles.size}\n\n${message.guild.roles.map(role => role.name).join(', ')}`, true)
     )
   }
 }
