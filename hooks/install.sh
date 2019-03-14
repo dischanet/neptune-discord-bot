@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /home/ec2-user/repos/neptune-discord-bot
-yarn install --production
+npm install --production
 
 if [ "$DEPLOYMENT_GROUP_NAME" == "Development" ]
 then

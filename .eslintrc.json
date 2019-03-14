@@ -1,6 +1,6 @@
 {
-  "extends": "standard",
-  "rules": {
-    "no-throw-literal": "off"
-  }
+    "extends": "standard",
+    "rules": {
+        "no-unused-vars": "off"
+    }
 }
