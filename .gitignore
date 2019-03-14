@@ -35,10 +35,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-<<<<<<< HEAD
 bwd/
-=======
->>>>>>> yuigahama/master
 
 # TypeScript v1 declaration files
 typings/
