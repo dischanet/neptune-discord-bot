@@ -11,7 +11,7 @@ const client = new Client({
   commandEditing: true
 })
 
-client.login(process.env.DISCORD_TOKEN)
+client.login(process.env.DISCORD_BOT_TOKEN)
 
 setInterval(() => {
   const heapUsed = (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)
