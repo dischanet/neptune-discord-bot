@@ -61,14 +61,11 @@ typings/
 # next.js build output
 .next
 
-<<<<<<< HEAD
 .idea
 .vscode
 
 # JetBrains IDE
 .idea
-=======
 # Provider
 src/bwd/provider/
 .vs
->>>>>>> yuigahama/master
