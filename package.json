@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "neptune",
   "version": "1.0.0",
   "main": "index.js",
@@ -19,6 +20,43 @@
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^8.0.0",
+=======
+  "name": "yuigahama",
+  "version": "1.0.0",
+  "description": "discordbot",
+  "main": "src/Yui.js",
+  "scripts": {
+    "start": "node src/Yui.js",
+    "test": "eslint .",
+    "lint": "eslint --ext .js --ignore-path .gitignore . --fix",
+    "precommit": "eslint --ext .js --ignore-path .gitignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InkoHX/Yui.git"
+  },
+  "keywords": [
+    "discordbot"
+  ],
+  "author": "InkoHX",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InkoHX/Yui/issues"
+  },
+  "homepage": "https://github.com/InkoHX/Yui#readme",
+  "dependencies": {
+    "discord.js": "github:discordjs/discord.js",
+    "dotenv": "^7.0.0",
+    "fuse.js": "^3.4.3",
+    "klasa": "github:dirigeants/klasa",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+>>>>>>> yuigahama/master
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0"
   }

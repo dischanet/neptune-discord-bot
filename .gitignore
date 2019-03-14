@@ -35,7 +35,10 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+<<<<<<< HEAD
 bwd/
+=======
+>>>>>>> yuigahama/master
 
 # TypeScript v1 declaration files
 typings/
@@ -61,8 +64,14 @@ typings/
 # next.js build output
 .next
 
+<<<<<<< HEAD
 .idea
 .vscode
 
 # JetBrains IDE
 .idea
+=======
+# Provider
+src/bwd/provider/
+.vs
+>>>>>>> yuigahama/master
