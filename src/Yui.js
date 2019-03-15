@@ -3,9 +3,9 @@ require('dotenv').config()
 const { Client } = require('klasa')
 const { version } = require('../package.json')
 const client = new Client({
-  prefix: 'yui!',
-  regexPrefix: /^yuigahama(@|!)/i,
-  presence: { activity: { name: 'Yuigahama!help', type: 'PLAYING' } },
+  prefix: 'n!',
+  regexPrefix: /^neptune(@|!)/i,
+  presence: { activity: { name: 'neptune!help', type: 'PLAYING' } },
   language: 'ja-JP',
   commandLogging: true,
   commandEditing: true
@@ -20,7 +20,7 @@ setInterval(() => {
   const totalUser = client.users.size
   const guilds = client.guilds.size
   const ping = Math.round(client.ws.ping)
-  process.title = `YuigahamaBot v${version} - Memory: ${heapUsed}/${heapTotal} MB | Heartbeat: ${ping}ms | Users: ${onlineUser}/${totalUser} | ${guilds} guilds`
+  process.title = `NeptuneBot v${version} - Memory: ${heapUsed}/${heapTotal} MB | Heartbeat: ${ping}ms | Users: ${onlineUser}/${totalUser} | ${guilds} guilds`
 }, 1000)
 
 module.exports = {
