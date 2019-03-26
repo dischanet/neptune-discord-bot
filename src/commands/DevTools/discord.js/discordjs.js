@@ -1,5 +1,5 @@
 const { Command, KlasaMessage } = require('klasa')
-const request = require('request')
+const fetch = require('node-fetch')
 
 /**
  * @extends Command
@@ -19,7 +19,7 @@ class DiscordJS extends Command {
 
   /**
    * @param {KlasaMessage} message
-   * @param {string[]} query
+   * @param {[string, string]} usage
    */
   async main (message, [query, branch = 'stable']) {
     await this.search(message, query, 'main', branch)
@@ -27,7 +27,7 @@ class DiscordJS extends Command {
 
   /**
    * @param {KlasaMessage} message
-   * @param {string[]} query
+   * @param {[string]} usage
    */
   async commando (message, [query]) {
     await this.search(message, query, 'commando')
@@ -35,7 +35,7 @@ class DiscordJS extends Command {
 
   /**
    * @param {KlasaMessage} message
-   * @param {string[]} query
+   * @param {[string]} usage
    */
   async rpc (message, [query]) {
     await this.search(message, query, 'rpc')
@@ -51,17 +51,11 @@ class DiscordJS extends Command {
    * @static
    */
   async search (message, query, type, branch = 'master') {
-    await request(`https://djsdocs.sorta.moe/${type}/${branch}/embed`, {
-      qs: {
-        q: query
-      },
-      method: 'GET',
-      json: true
-    }, (e, r, b) => {
-      if (b.status) return message.sendMessage(b.message)
-      if (!b) return message.sendMessage(`[${type}:${branch}] Information matching \`${query}\` could not be found.`)
-      return message.sendEmbed(b)
-    })
+    const body = await fetch(`https://djsdocs.sorta.moe/${type}/${branch}/embed?q=${encodeURIComponent(query)}`)
+      .then(res => res.json())
+      .catch(() => null)
+    if (!body) return message.sendMessage(`[${type}:${branch}] Information matching \`${query}\` could not be found.`)
+    return message.sendEmbed(body)
   }
 }
 

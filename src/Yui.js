@@ -2,6 +2,8 @@ require('dotenv').config()
 
 const { Client } = require('klasa')
 const { version } = require('../package.json')
+const DBLAPI = require('dblapi.js')
+
 const client = new Client({
   prefix: 'n!',
   regexPrefix: /^neptune(@|!)/i,
@@ -10,6 +12,18 @@ const client = new Client({
   commandLogging: true,
   commandEditing: true
 })
+
+if ('DBL_TOKEN' in process.env) {
+  const DBL = new DBLAPI(process.env.DBL_TOKEN, client)
+
+  DBL.on('error', (error) => {
+    client.emit('DblError', client, error)
+  })
+
+  DBL.on('posted', () => {
+    client.emit('DblPosted', client)
+  })
+}
 
 client.login(process.env.DISCORD_BOT_TOKEN)
 
@@ -24,5 +38,6 @@ setInterval(() => {
 }, 1000)
 
 module.exports = {
-  Utils: require('./lib/util/utils')
+  Utils: require('./lib/util/utils'),
+  Nekoslife: require('./lib/util/Nekolife')
 }

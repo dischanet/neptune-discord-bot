@@ -6,7 +6,7 @@ class Avatar extends Command {
     super(...args, {
       enabled: true,
       requiredPermissions: ['ATTACH_FILES'],
-      description: '自身または他のユーザーのアバター画像を表示します。',
+      description: '自身または他のユーザーのアバター画像を送信します。',
       extendedHelp: 'No extended help available.',
       usage: '[user:user]'
     })
@@ -14,10 +14,10 @@ class Avatar extends Command {
 
   /**
    * @param {KlasaMessage} message
-   * @param {User[]} user
+   * @param {[User]} usage
    */
   async run (message, [user = null]) {
-    return message.send(new MessageAttachment(user ? user.avatarURL({ size: 1024 }) : message.author.avatarURL({ size: 1024 })))
+    return message.send(new MessageAttachment(user ? user.avatarURL({ size: 2048 }) : message.author.avatarURL({ size: 2048 })))
   }
 }
 
