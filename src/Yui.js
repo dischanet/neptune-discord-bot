@@ -22,5 +22,6 @@ client.login(process.env.DISCORD_BOT_TOKEN)
 
 module.exports = {
   Utils: require('./lib/util/utils'),
-  Nekoslife: require('./lib/util/Nekolife')
+  Nekoslife: require('./lib/util/Nekolife'),
+  NeptuneVersion: '1.0.1'
 }
