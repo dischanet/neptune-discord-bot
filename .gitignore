@@ -66,3 +66,9 @@ typings/
 
 # JetBrains IDE
 .idea
+# Provider
+src/bwd/provider/
+.vs/
+
+# JetBrains IDE
+.idea/
