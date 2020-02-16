@@ -3,7 +3,7 @@
 cd /home/ec2-user/repos/neptune-discord-bot
 npm install --production
 
-if [ "$DEPLOYMENT_GROUP_NAME" == "stage" ]
+if [ "$DEPLOYMENT_GROUP_NAME" == "develop" ]
 then
     PARAMETER_NAME=NEPTUNE_DEVELOP_DISCORD_BOT_SECRET
 else
